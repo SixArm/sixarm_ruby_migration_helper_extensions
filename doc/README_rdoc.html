@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: README.rdoc [sixarm_ruby_migration_helper_extensions]</title>
+
+	<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_migration_helper_extensions_gemspec.html">sixarm_ruby_migration_helper_extensions.gemspec</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_migration_helper_extensions_sha512_txt.html">sixarm_ruby_migration_helper_extensions.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Ddb.html">Ddb</a></li>
+				
+					<li><a href="./Ddb/SixArm.html">Ddb::SixArm</a></li>
+				
+					<li><a href="./Ddb/SixArm/MigrationHelper.html">Ddb::SixArm::MigrationHelper</a></li>
+				
+					<li><a href="./Ddb/SixArm/MigrationHelper/InstanceMethods.html">Ddb::SixArm::MigrationHelper::InstanceMethods</a></li>
+				
+					<li><a href="./ActiveRecordMigrationTableMock.html">ActiveRecordMigrationTableMock</a></li>
+				
+					<li><a href="./CreateFoos.html">CreateFoos</a></li>
+				
+					<li><a href="./Testing.html">Testing</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>SixArm Ruby Gem: Migration Helper Extensions for Ruby On Rails ActiveRecord</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2009-2010 Joel Parker Henderson
+
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+
+</td></tr>
+</table>
+<p>
+Ruby On Rails ActiveRecord MigrationHelper extensions
+</p>
+<h2>Example Migration</h2>
+<pre>
+  class CreateItems &lt; ActiveRecord::Migration
+
+    def self.up
+       create_table 'items' do |t|
+         t.timestamps
+         t.column :title, :string
+         t.latitude
+         t.longitude
+         t.email
+         t.freebase
+         t.height
+         t.weight
+       end
+     end
+
+    def self.down
+      drop_table 'items'
+    end
+
+  end
+</pre>
+<h2>Example Use</h2>
+<pre>
+    i = Item.new
+    i.title = &quot;Statue Of Liberty&quot;
+    i.latitude = 40.68913
+    i.longitude = -74.0446
+    i.email = &quot;statue.of.liberty@example.com&quot;
+    i.freebase = &quot;9202a8c04000641f8000000000000687&quot;
+    i.height = 46.50  #meters
+    i.weight = 204116566  #grams
+    i.save
+</pre>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+
