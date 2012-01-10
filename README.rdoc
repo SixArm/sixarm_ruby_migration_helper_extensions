@@ -1,7 +1,7 @@
 
 = SixArm Ruby Gem: Migration Helper Extensions for Ruby On Rails ActiveRecord
 
-Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
+Author:: Joel Parker Henderson, joel@joelparkerhenderson.com
 Copyright:: Copyright (c) 2009-2010 Joel Parker Henderson
 License:: CreativeCommons License, Non-commercial Share Alike
 License:: LGPL, GNU Lesser General Public License
