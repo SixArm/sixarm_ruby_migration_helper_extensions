@@ -1,6 +1,6 @@
 require 'simplecov'
 SimpleCov.start
-require 'test/unit'
+require 'minitest/autorun'
 require 'sixarm_ruby_active_record_migration_mock'
 require 'sixarm_ruby_migration_helper_extensions'
 
