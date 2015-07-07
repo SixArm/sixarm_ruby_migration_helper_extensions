@@ -80,8 +80,3 @@ The result is an item class with fields of the various data types:
     i.height = 46.50  # meters
     i.weight = 204116566  # grams
     i.save
-
-
-## Changes
-
-* 2012-03-14 1.0.8 Update docs, tests
