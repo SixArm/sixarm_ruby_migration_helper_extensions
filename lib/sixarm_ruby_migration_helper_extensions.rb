@@ -36,7 +36,7 @@ module Ddb
   end
 end
 
-require 'activerecord'
+require "activerecord"
 if defined?(ActiveRecord::ConnectionAdapters::TableDefinition)
    ActiveRecord::ConnectionAdapters::TableDefinition.send(:include, Ddb::SixArm::MigrationHelper)
 end

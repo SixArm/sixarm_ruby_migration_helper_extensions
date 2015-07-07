@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
-require 'simplecov'
+require "minitest/autorun"
+require "simplecov"
 SimpleCov.start
-require 'sixarm_ruby_active_record_migration_mock'
-require 'sixarm_ruby_migration_helper_extensions'
+require "sixarm_ruby_active_record_migration_mock"
+require "sixarm_ruby_migration_helper_extensions"
 
 class Testing < Test::Unit::TestCase
  
