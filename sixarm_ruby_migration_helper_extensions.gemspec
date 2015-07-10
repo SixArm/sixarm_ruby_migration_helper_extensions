@@ -34,6 +34,11 @@ Gem::Specification.new do |s|
   ]
 
   s.add_dependency('activerecord', '>= 2.0.0', '< 999')
-  s.add_dependency('sixarm_ruby_active_record_migration_mock', '>= 1.0.8', '< 999') # for test/unit
+
+  s.add_development_dependency('minitest', '>= 5.7.0', '< 6')
+  s.add_development_dependency('rake', '> 10.4.2', '< 11')
+  s.add_development_dependency('simplecov', '>= 0.10.0', '< 2')
+  s.add_development_dependency('coveralls', '>= 0.8.2', '< 2')
+  s.add_development_dependency('sixarm_ruby_active_record_migration_mock', '>= 1.0.8', '< 999')
 
 end
