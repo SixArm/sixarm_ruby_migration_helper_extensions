@@ -1,4 +1,4 @@
-# Ruby » <br> Migration Helper Extensions for Ruby On Rails ActiveRecord
+SixArm.com → Ruby → <br> Migration Helper Extensions for Ruby On Rails ActiveRecord
 
 * Doc: <http://sixarm.com/sixarm_ruby_migration_helper_extensions/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_migration_helper_extensions>
