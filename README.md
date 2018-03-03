@@ -1,8 +1,11 @@
 # SixArm.com → Ruby → <br> Migration Helper Extensions for Ruby On Rails ActiveRecord
 
+<!--header-open-->
+
 * Doc: <http://sixarm.com/sixarm_ruby_migration_helper_extensions/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_migration_helper_extensions>
 * Repo: <http://github.com/sixarm/sixarm_ruby_migration_helper_extensions>
+
 <!--header-shut-->
 
 
@@ -15,7 +18,7 @@ For docs go to <http://sixarm.com/sixarm_ruby_migration_helper_extensions/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--install-opent-->
+<!--install-open-->
 
 ## Install
 

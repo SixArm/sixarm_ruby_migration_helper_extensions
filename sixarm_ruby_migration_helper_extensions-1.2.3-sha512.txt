@@ -1,0 +1,1 @@
+f191538b858111482fb3bf6aa50ebb90f24c125cc8da166e0ccff07c7e902f7d6ae2cde94caceea742253cc56f11d481e5a5ea254e4398596dd037f11a7659f6  sixarm_ruby_migration_helper_extensions-1.2.3.gem

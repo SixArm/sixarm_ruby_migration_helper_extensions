@@ -2,22 +2,22 @@
 
 Gem::Specification.new do |s|
 
-  s.name              = "sixarm_ruby_migration_helper_extensions"
-  s.summary           = "SixArm.com → Ruby → Migration helper extensions"
-  s.description       = "Migration helper extensions for Ruby On Rails development"
-  s.version           = "1.0.9"
+  s.name           = "sixarm_ruby_migration_helper_extensions"
+  s.summary        = "SixArm.com → Ruby → Migration helper extensions"
+  s.description    = "Migration helper extensions for Ruby On Rails development"
+  s.version        = "1.2.3"
 
-  s.author            = "SixArm"
-  s.email             = "sixarm@sixarm.com"
-  s.homepage          = "http://sixarm.com/"
+  s.author         = "SixArm"
+  s.email          = "sixarm@sixarm.com"
+  s.homepage       = "http://sixarm.com/"
   s.licenses       = ["Apache-2.0", "Artistic-2.0", "BSD-3-Clause", "GPL-3.0", "MIT", "MPL-2.0"]
 
-  s.signing_key       = "/opt/keys/sixarm/sixarm-rsa-4096-x509-20180113-private.pem"
-  s.cert_chain        = ["/opt/keys/sixarm/sixarm-rsa-4096-x509-20180113-public.pem"]
+  s.signing_key    = "/opt/keys/sixarm/sixarm-rsa-4096-x509-20180113-private.pem"
+  s.cert_chain     = ["/opt/keys/sixarm/sixarm-rsa-4096-x509-20180113-public.pem"]
 
-  s.platform          = Gem::Platform::RUBY
-  s.require_path      = "lib"
-  s.has_rdoc          = true
+  s.platform       = Gem::Platform::RUBY
+  s.require_path   = "lib"
+  s.has_rdoc       = true
 
   s.files = [
     "Rakefile",
