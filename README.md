@@ -53,13 +53,13 @@ Migration:
       def self.up
          create_table 'items' do |t|
            t.timestamps
-           t.column :title, :string
-           t.latitude
-           t.longitude
+           t.name
            t.email
-           t.freebase
+           t.phone
            t.height
            t.weight
+           t.latitude
+           t.longitude
          end
        end
 
@@ -71,12 +71,12 @@ Migration:
 
 The result is an item class with fields of the various data types:
 
-    i = Item.new
-    i.title = "Statue Of Liberty"
-    i.latitude = 40.68913
-    i.longitude = -74.0446
-    i.email = "statue.of.liberty@example.com"
-    i.freebase = "9202a8c04000641f8000000000000687"
-    i.height = 46.50  # meters
-    i.weight = 204116566  # grams
-    i.save
+    item = Item.new
+    item.name = "Statue Of Liberty"
+    item.email = "liberty@example.com"
+    item.phone = "+1 (212) 363-3200"
+    item.height = 46.50
+    item.weight = 204116566
+    item.latitude = 40.68913
+    item.longitude = -74.0446
+    item.save

@@ -15,53 +15,95 @@ module Ddb
       module InstanceMethods
 
         ## Common        
-        def name          (column_name=:name)       column(column_name, :string)     end
+        def name          (column_name=:name)         column(column_name, :string); index(column_name); end
 
         ## Contact
-        def email         (column_name=:email)      column(column_name, :string, limit: 320); t.index(column_name); end
-        def phone         (column_name=:phone)      column(column_name, :string)     end
-        def uri           (column_name=:uri)        column(column_name, :string)     end
+        def email         (column_name=:email)        column(column_name, :string, limit: 320); index(column_name); end
+        def phone         (column_name=:phone)        column(column_name, :string); index(column_name); end
+        def uri           (column_name=:uri)          column(column_name, :string); index(column_name); end
 
         ## Size
-        def height        (column_name=:height)     column(column_name, :decimal, precision: 13, scale: 10) end
-        def length        (column_name=:length)     column(column_name, :decimal, precision: 13, scale: 10) end
-        def width         (column_name=:width)      column(column_name, :decimal, precision: 13, scale: 10) end
-        def depth         (column_name=:depth)      column(column_name, :decimal, precision: 13, scale: 10) end
-        def mass          (column_name=:mass)       column(column_name, :decimal, precision: 13, scale: 10) end
+        def height        (column_name=:height)       column(column_name, :decimal, precision: 13, scale: 10) end
+        def length        (column_name=:length)       column(column_name, :decimal, precision: 13, scale: 10) end
+        def width         (column_name=:width)        column(column_name, :decimal, precision: 13, scale: 10) end
+        def depth         (column_name=:depth)        column(column_name, :decimal, precision: 13, scale: 10) end
+        def mass          (column_name=:mass)         column(column_name, :decimal, precision: 13, scale: 10) end
 
         ## Geolocation
-        def latitude      (column_name=:latitude)   column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
-        def longitude     (column_name=:longitude)  column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
-        def altitude      (column_name=:altitude)   column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
-        def elevation     (column_name=:altitude)   column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
-
-        ## Administration
-        def parent_id     (column_name=:parent_id)  column(column_name, :integer) end
-        def position      (column_name=:position)   column(column_name, :integer) end
-        def state         (column_name=:state)      column(column_name, :integer); index(column_name); end
-        def uuid_string   (column_name=:uuid)       column(column_name, :string, limit: 36); index(column_name, unique: true);  end
-
-        ## Vendors
-        def freebase      (column_name=:freebase)   column(column_name, :string)     end
-
-        ## Database administration
-        def dba
-          t.string :uuid, :limit => 36; t.index :uuid, unique: true
-          t.datetime :created_on; t.index :created_on; t.integer :created_by; t.index :created_by
-          t.datetime :updated_on; t.index :updated_on; t.integer :updated_by; t.index :updated_by
-          t.datetime :proofed_on; t.index :proofed_on; t.integer :proofed_by; t.index :proofed_by
-          t.datetime :retired_on; t.index :retired_on; t.integer :retired_by; t.index :retired_by
-          t.integer :state; t.index :state  # State machine enumeration (optional)
-          t.integer :lock_version  # Lock version for optimistic/pessimistic locking (optional)
-          t.integer :parent_id; t.index :parent_id  # Parent id for parent-child relationship (optional)
-          t.integer :position; t.index :position  # Position for list ordering (optional)
-          t.string :type; t.index :type  # Single table inheritance magic field name (optional)
-        end
+        def latitude      (column_name=:latitude)     column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
+        def longitude     (column_name=:longitude)    column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
+        def altitude      (column_name=:altitude)     column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
+        def elevation     (column_name=:altitude)     column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
 
         def geolocation
           latitude
           longitude
           altitude
+        end
+
+
+        ##
+        #
+        # Vendors
+        #
+        ##
+
+        def freebase(column_name=:freebase) column(column_name, :string) end
+
+        ##
+        #
+        # Administration
+        #
+        ##
+
+        # We sometimes like to use UUID strings; for efficiency, we suggest using a database-native format.
+        def uuid_string   (column_name=:uuid_string)  column(column_name, :string, limit: 36); index(column_name, unique: true);  end
+
+        # We sometimes like to use parent-child relationships, where `parent_id` points to the parent row.
+        def parent_id     (column_name=:parent_id)    column(column_name, :integer); index(column_name); end
+
+        # We sometimes like to use ordered lists, where the `position` is the list position.
+        def position      (column_name=:position)     column(column_name, :integer); index(column_name); end
+
+        # We sometimes like to use state machines, where the `state` is an integer enumeration.
+        def state         (column_name=:state)        column(column_name, :integer); index(column_name); end
+
+        # Rails row locking using optimistic locking or pessimistic locking
+        def lock_version  (column_name=:lock_version) column(column_name, :integer); index(column_name); end
+
+        # Rails single table inheritance (STI) uses a magic field name `type`
+        def type          (column_name=:type)         column(column_name, :string); index(column_name); end  
+
+        # We like to track what's happening to a row, by using typical Rails timestamps and then some.
+        def auditstamps
+          column(:created_on, :datetime); index(:created_on); column(:created_by, :integer); index(:created_by)
+          column(:updated_on, :datetime); index(:updated_on); column(:updated_by, :integer); index(:updated_by)
+          column(:proofed_on, :datetime); index(:proofed_on); column(:proofed_by, :integer); index(:proofed_by)
+          column(:retired_on, :datetime); index(:retired_on); column(:retired_by, :integer); index(:retired_by)
+        end
+
+        ##
+        # Database administration
+        #
+        # We build many Rails apps and we like to add some columns
+        # that help with database administration and easy growth.
+        #
+        # We like to add these columns during setup, even if we don't
+        # use them, because they make syncronization easy, and they
+        # work with some of our data auditing shared code.
+        #
+        # Use what you like, customize as you like, YMMV, etc.
+        ##
+
+        def dba
+          uuid_string
+          state
+          auditstamps
+          lock_version
+          parent_id
+          position
+          lock_version
+          type
         end
 
       end
