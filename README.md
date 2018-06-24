@@ -2,9 +2,15 @@
 
 <!--header-open-->
 
+[![Gem Version](https://badge.fury.io/rb/sixarm_ruby_migration_helper_extensions.svg)](http://badge.fury.io/rb/sixarm_ruby_migration_helper_extensions)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_migration_helper_extensions.png)](https://travis-ci.org/SixArm/sixarm_ruby_migration_helper_extensions)
+[![Code Climate](https://api.codeclimate.com/v1/badges/c0c87ef7543e0da158f5/maintanability)](https://codeclimate.com/github/SixArm/sixarm_ruby_migration_helper_extensions/maintainability)
+
+* Git: <https://github.com/SixArm/sixarm_ruby_migration_helper_extensions>
 * Doc: <http://sixarm.com/sixarm_ruby_migration_helper_extensions/doc>
-* Gem: <http://rubygems.org/gems/sixarm_ruby_migration_helper_extensions>
-* Repo: <http://github.com/sixarm/sixarm_ruby_migration_helper_extensions>
+* Gem: <https://rubygems.org/gems/sixarm_ruby_migration_helper_extensions>
+* Contact: Joel Parker Henderson, <joel@sixarm.com>
+* Project: [changes](CHANGES.md), [license](LICENSE.md), [contributing](CONTRIBUTING.md).
 
 <!--header-shut-->
 
@@ -22,23 +28,23 @@ Want to help? We're happy to get pull requests.
 
 ## Install
 
-To install using a Gemfile, add this:
+### Gem
 
-    gem "sixarm_ruby_migration_helper_extensions", ">= 1.0.9", "< 2"
+To install this gem in your shell or terminal:
 
-To install using the command line, run this:
+    gem install sixarm_ruby_migration_helper_extensions
 
-    gem install sixarm_ruby_migration_helper_extensions -v ">= 1.0.9, < 2"
+### Gemfile
 
-To install using the command line with high security, run this:
+To add this gem to your Gemfile:
 
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
-    gem install sixarm_ruby_migration_helper_extensions -v ">= 1.0.9, < 2" --trust-policy HighSecurity
+    gem 'sixarm_ruby_migration_helper_extensions'
+
+### Require
 
 To require the gem in your code:
 
-    require "sixarm_ruby_migration_helper_extensions"
+    require 'sixarm_ruby_migration_helper_extensions'
 
 <!--install-shut-->
 
