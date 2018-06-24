@@ -1,668 +1,1496 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-
-	<title>Module: Ddb::SixArm::MigrationHelper::InstanceMethods</title>
-
-	<link rel="stylesheet" href="../../../rdoc.css" type="text/css" media="screen" />
-
-	<script src="../../../js/jquery.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="../../../js/thickbox-compressed.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="../../../js/quicksearch.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="../../../js/darkfish.js" type="text/javascript"
-		charset="utf-8"></script>
-
-</head>
-<body class="module">
-
-	<div id="metadata">
-		<div id="file-metadata">
-			<div id="file-list-section" class="section">
-				<h3 class="section-header">In Files</h3>
-				<div class="section-body">
-					<ul>
-					
-						<li><a href="../../../lib/sixarm_ruby_migration_helper_extensions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/sixarm_ruby_migration_helper_extensions.rb">lib/sixarm_ruby_migration_helper_extensions.rb</a></li>
-					
-					</ul>
-				</div>
-			</div>
-
-			
-		</div>
-
-		<div id="class-metadata">
-
-			<!-- Parent Class -->
-			
-
-			<!-- Namespace Contents -->
-			
-
-			<!-- Method Quickref -->
-			
-			<div id="method-list-section" class="section">
-				<h3 class="section-header">Methods</h3>
-				<ul class="link-list">
-					
-					<li><a href="#M000001">#active</a></li>
-					
-					<li><a href="#M000004">#email</a></li>
-					
-					<li><a href="#M000005">#freebase</a></li>
-					
-					<li><a href="#M000006">#height</a></li>
-					
-					<li><a href="#M000007">#latitude</a></li>
-					
-					<li><a href="#M000008">#length</a></li>
-					
-					<li><a href="#M000009">#longitude</a></li>
-					
-					<li><a href="#M000010">#name</a></li>
-					
-					<li><a href="#M000011">#parent_id</a></li>
-					
-					<li><a href="#M000012">#phone</a></li>
-					
-					<li><a href="#M000013">#position</a></li>
-					
-					<li><a href="#M000014">#status</a></li>
-					
-					<li><a href="#M000015">#thickness</a></li>
-					
-					<li><a href="#M000016">#uri</a></li>
-					
-					<li><a href="#M000017">#weight</a></li>
-					
-					<li><a href="#M000018">#width</a></li>
-					
-				</ul>
-			</div>
-			
-
-			<!-- Included Modules -->
-			
-		</div>
-
-		<div id="project-metadata">
-			
-			
-			<div id="fileindex-section" class="section project-section">
-				<h3 class="section-header">Files</h3>
-				<ul>
-				
-					<li class="file"><a href="../../../README_rdoc.html">README.rdoc</a></li>
-				
-					<li class="file"><a href="../../../sixarm_ruby_migration_helper_extensions_gemspec.html">sixarm_ruby_migration_helper_extensions.gemspec</a></li>
-				
-					<li class="file"><a href="../../../sixarm_ruby_migration_helper_extensions_sha512_txt.html">sixarm_ruby_migration_helper_extensions.sha512.txt</a></li>
-				
-				</ul>
-			</div>
-			
-
-			<div id="classindex-section" class="section project-section">
-				<h3 class="section-header">Class Index
-					<span class="search-toggle"><img src="../../../images/find.png"
-						height="16" width="16" alt="[+]"
-						title="show/hide quicksearch" /></span></h3>
-				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-				<fieldset>
-					<legend>Quicksearch</legend>
-					<input type="text" name="quicksearch" value=""
-						class="quicksearch-field" />
-				</fieldset>
-				</form>
-
-				<ul class="link-list">
-				
-					<li><a href="../../../Ddb.html">Ddb</a></li>
-				
-					<li><a href="../../../Ddb/SixArm.html">Ddb::SixArm</a></li>
-				
-					<li><a href="../../../Ddb/SixArm/MigrationHelper.html">Ddb::SixArm::MigrationHelper</a></li>
-				
-					<li><a href="../../../Ddb/SixArm/MigrationHelper/InstanceMethods.html">Ddb::SixArm::MigrationHelper::InstanceMethods</a></li>
-				
-					<li><a href="../../../ActiveRecordMigrationTableMock.html">ActiveRecordMigrationTableMock</a></li>
-				
-					<li><a href="../../../CreateFoos.html">CreateFoos</a></li>
-				
-					<li><a href="../../../Testing.html">Testing</a></li>
-				
-				</ul>
-				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
-			</div>
-
-			
-		</div>
-	</div>
-
-	<div id="documentation">
-		<h1 class="module">Ddb::SixArm::MigrationHelper::InstanceMethods</h1>
-
-		<div id="description">
-			
-		</div>
-
-		<!-- Constants -->
-		
-
-		<!-- Attributes -->
-		
-
-		<!-- Methods -->
-		
-		<div id="public-instance-method-details" class="method-section section">
-			<h3 class="section-header">Public Instance Methods</h3>
-
-		
-			<div id="active-method" class="method-detail ">
-				<a name="M000001"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">active</span><span
-						class="method-args">(column_name=:active)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="active-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 60</span>
-60:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">active</span>    (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:active</span>)     <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:boolean</span>, <span class="ruby-identifier">:default=</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword kw">true</span>) <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="email-method" class="method-detail ">
-				<a name="M000004"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">email</span><span
-						class="method-args">(column_name=:email)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="email-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 61</span>
-61:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">email</span>     (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:email</span>)      <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:string</span>)     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="freebase-method" class="method-detail ">
-				<a name="M000005"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">freebase</span><span
-						class="method-args">(column_name=:freebase)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="freebase-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 62</span>
-62:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">freebase</span>  (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:freebase</span>)   <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:string</span>)     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="height-method" class="method-detail ">
-				<a name="M000006"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">height</span><span
-						class="method-args">(column_name=:height)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="height-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 63</span>
-63:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">height</span>    (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:height</span>)     <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="latitude-method" class="method-detail ">
-				<a name="M000007"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">latitude</span><span
-						class="method-args">(column_name=:latitude)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="latitude-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 64</span>
-64:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">latitude</span>  (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:latitude</span>)   <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="length-method" class="method-detail ">
-				<a name="M000008"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">length</span><span
-						class="method-args">(column_name=:length)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="length-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 65</span>
-65:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">length</span>    (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:length</span>)     <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="longitude-method" class="method-detail ">
-				<a name="M000009"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">longitude</span><span
-						class="method-args">(column_name=:longitude)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="longitude-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 66</span>
-66:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">longitude</span> (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:longitude</span>)  <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="name-method" class="method-detail ">
-				<a name="M000010"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">name</span><span
-						class="method-args">(column_name=:name)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="name-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 67</span>
-67:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">name</span>      (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:name</span>)       <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:string</span>)     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="parent-id-method" class="method-detail ">
-				<a name="M000011"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">parent_id</span><span
-						class="method-args">(column_name=:parent_id)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="parent-id-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 68</span>
-68:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parent_id</span> (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:parent_id</span>)  <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:integer</span>)    <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="phone-method" class="method-detail ">
-				<a name="M000012"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">phone</span><span
-						class="method-args">(column_name=:phone)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="phone-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 69</span>
-69:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">phone</span>     (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:phone</span>)      <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:string</span>)     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="position-method" class="method-detail ">
-				<a name="M000013"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">position</span><span
-						class="method-args">(column_name=:position)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="position-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 70</span>
-70:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">position</span>  (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:position</span>)   <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:integer</span>)    <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="status-method" class="method-detail ">
-				<a name="M000014"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">status</span><span
-						class="method-args">(column_name=:status)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="status-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 71</span>
-71:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">status</span>    (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:status</span>)     <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:integer</span>)    <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="thickness-method" class="method-detail ">
-				<a name="M000015"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">thickness</span><span
-						class="method-args">(column_name=:thickness)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="thickness-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 72</span>
-72:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">thickness</span> (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:thickness</span>)  <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="uri-method" class="method-detail ">
-				<a name="M000016"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">uri</span><span
-						class="method-args">(column_name=:uri)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="uri-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 73</span>
-73:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">uri</span>       (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:uri</span>)        <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:string</span>)     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="weight-method" class="method-detail ">
-				<a name="M000017"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">weight</span><span
-						class="method-args">(column_name=:weight)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="weight-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 74</span>
-74:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">weight</span>    (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:weight</span>)     <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-			<div id="width-method" class="method-detail ">
-				<a name="M000018"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">width</span><span
-						class="method-args">(column_name=:width)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="width-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_migration_helper_extensions.rb, line 75</span>
-75:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">width</span>     (<span class="ruby-identifier">column_name</span>=<span class="ruby-identifier">:width</span>)      <span class="ruby-identifier">column</span>(<span class="ruby-identifier">column_name</span>, <span class="ruby-identifier">:float</span>)      <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-
-	</div>
-
-
-	<div id="rdoc-debugging-section-dump" class="debugging-section">
-	
-		<p>Disabled; run with --debug to generate this.</p>
-	
-	</div>
-
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
-
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Ddb::SixArm::MigrationHelper::InstanceMethods
+  
+    &mdash; Documentation by YARD 0.9.14
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Ddb::SixArm::MigrationHelper::InstanceMethods";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (I)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Ddb.html" title="Ddb (module)">Ddb</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../SixArm.html" title="Ddb::SixArm (module)">SixArm</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../MigrationHelper.html" title="Ddb::SixArm::MigrationHelper (module)">MigrationHelper</a></span></span>
+     &raquo; 
+    <span class="title">InstanceMethods</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Ddb::SixArm::MigrationHelper::InstanceMethods
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/sixarm_ruby_migration_helper_extensions.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#altitude-instance_method" title="#altitude (instance method)">#<strong>altitude</strong>(column_name = :altitude)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#auditstamps-instance_method" title="#auditstamps (instance method)">#<strong>auditstamps</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>auditstamps: we like to track what&#39;s happening to a row, by using
+typical Rails timestamps and then some more.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dba-instance_method" title="#dba (instance method)">#<strong>dba</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Database administration.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#depth-instance_method" title="#depth (instance method)">#<strong>depth</strong>(column_name = :depth)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#email-instance_method" title="#email (instance method)">#<strong>email</strong>(column_name = :email)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>email: string limit is 320 because the email spec has pieces that total to
+320, though then trims the limit to 254.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#freebase-instance_method" title="#freebase (instance method)">#<strong>freebase</strong>(column_name = :freebase)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Vendors.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#geolocation-instance_method" title="#geolocation (instance method)">#<strong>geolocation</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#height-instance_method" title="#height (instance method)">#<strong>height</strong>(column_name = :height)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Size.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#latitude-instance_method" title="#latitude (instance method)">#<strong>latitude</strong>(column_name = :latitude)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Geolocation.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#length-instance_method" title="#length (instance method)">#<strong>length</strong>(column_name = :length)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lock_version-instance_method" title="#lock_version (instance method)">#<strong>lock_version</strong>(column_name = :lock_version)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>lock_version: Rails row locking using either optimistic locking or
+pessimistic locking.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#longitude-instance_method" title="#longitude (instance method)">#<strong>longitude</strong>(column_name = :longitude)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mass-instance_method" title="#mass (instance method)">#<strong>mass</strong>(column_name = :mass)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>(column_name = :name)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parent_id-instance_method" title="#parent_id (instance method)">#<strong>parent_id</strong>(column_name = :parent_id)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>parent_id: we sometimes use parent-child relationships, where `parent_id`
+points to the parent row.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#phone-instance_method" title="#phone (instance method)">#<strong>phone</strong>(column_name = :phone)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>phone: string limit is 75 because that&#39;s our arbitrary limit, and long
+enough for international numbers and extensions.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#position-instance_method" title="#position (instance method)">#<strong>position</strong>(column_name = :position)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>position: we sometimes like to use ordered lists,  where the `position` is
+the list position.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#state-instance_method" title="#state (instance method)">#<strong>state</strong>(column_name = :state)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>state: we sometimes like to use state machines,  where the `state` is an
+integer enumeration.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>(column_name = :type)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>type: Rails single table inheritance (STI)  uses a magic field name `type`.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uri-instance_method" title="#uri (instance method)">#<strong>uri</strong>(column_name = :uri)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>uri: string is unlimited.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uuid_string-instance_method" title="#uuid_string (instance method)">#<strong>uuid_string</strong>(column_name = :uuid_string)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>uuid_string: we sometimes like to use UUID strings;  for efficiency, we
+suggest using a database-native format.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#width-instance_method" title="#width (instance method)">#<strong>width</strong>(column_name = :width)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="altitude-instance_method">
+  
+    #<strong>altitude</strong>(column_name = :altitude)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_altitude'>altitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:altitude</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="auditstamps-instance_method">
+  
+    #<strong>auditstamps</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>auditstamps: we like to track what&#39;s happening to a row, by using
+typical Rails timestamps and then some more.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+159
+160
+161
+162
+163
+164</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 159</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_auditstamps'>auditstamps</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:created_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:created_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:created_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:created_by</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:updated_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:updated_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:updated_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:updated_by</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:proofed_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:proofed_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:proofed_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:proofed_by</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:retired_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:retired_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:retired_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:retired_by</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dba-instance_method">
+  
+    #<strong>dba</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Database administration</p>
+
+<p>We build many Rails apps and we like to add some columns that help with
+database administration and easy growth.</p>
+
+<p>We like to add these columns during setup, even if we don&#39;t use them,
+because they make syncronization easy, and they work with some of our data
+auditing shared code.</p>
+
+<p>Use what you like, customize as you like, YMMV, etc.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178
+179
+180
+181
+182
+183
+184
+185
+186</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 178</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dba'>dba</span>
+  <span class='id identifier rubyid_uuid_string'>uuid_string</span>
+  <span class='id identifier rubyid_auditstamps'>auditstamps</span>
+  <span class='id identifier rubyid_lock_version'>lock_version</span>
+  <span class='id identifier rubyid_state'>state</span>
+  <span class='id identifier rubyid_parent_id'>parent_id</span>
+  <span class='id identifier rubyid_position'>position</span>
+  <span class='id identifier rubyid_type'>type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="depth-instance_method">
+  
+    #<strong>depth</strong>(column_name = :depth)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_depth'>depth</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:depth</span><span class='rparen'>)</span>       <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="email-instance_method">
+  
+    #<strong>email</strong>(column_name = :email)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>email: string limit is 320 because the email spec has pieces that total to
+320, though then trims the limit to 254.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_email'>email</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:email</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>320</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="freebase-instance_method">
+  
+    #<strong>freebase</strong>(column_name = :freebase)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Vendors</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_freebase'>freebase</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:freebase</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="geolocation-instance_method">
+  
+    #<strong>geolocation</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_geolocation'>geolocation</span>
+  <span class='id identifier rubyid_latitude'>latitude</span>
+  <span class='id identifier rubyid_longitude'>longitude</span>
+  <span class='id identifier rubyid_altitude'>altitude</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="height-instance_method">
+  
+    #<strong>height</strong>(column_name = :height)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Size</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 63</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_height'>height</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:height</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="latitude-instance_method">
+  
+    #<strong>latitude</strong>(column_name = :latitude)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Geolocation</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_latitude'>latitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:latitude</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="length-instance_method">
+  
+    #<strong>length</strong>(column_name = :length)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_length'>length</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:length</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="lock_version-instance_method">
+  
+    #<strong>lock_version</strong>(column_name = :lock_version)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>lock_version: Rails row locking using either optimistic locking or
+pessimistic locking.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+141
+142
+143
+144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 141</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_lock_version'>lock_version</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:lock_version</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="longitude-instance_method">
+  
+    #<strong>longitude</strong>(column_name = :longitude)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_longitude'>longitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:longitude</span><span class='rparen'>)</span>   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mass-instance_method">
+  
+    #<strong>mass</strong>(column_name = :mass)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mass'>mass</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:mass</span><span class='rparen'>)</span>         <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>(column_name = :name)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Name</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parent_id-instance_method">
+  
+    #<strong>parent_id</strong>(column_name = :parent_id)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>parent_id: we sometimes use parent-child relationships, where `parent_id`
+points to the parent row.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+114
+115
+116
+117</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 114</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parent_id'>parent_id</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:parent_id</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="phone-instance_method">
+  
+    #<strong>phone</strong>(column_name = :phone)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>phone: string limit is 75 because that&#39;s our arbitrary limit, and long
+enough for international numbers and extensions.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_phone'>phone</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:phone</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="position-instance_method">
+  
+    #<strong>position</strong>(column_name = :position)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>position: we sometimes like to use ordered lists,  where the `position` is
+the list position.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+123
+124
+125
+126</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 123</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_position'>position</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:position</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="state-instance_method">
+  
+    #<strong>state</strong>(column_name = :state)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>state: we sometimes like to use state machines,  where the `state` is an
+integer enumeration.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+132
+133
+134
+135</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 132</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_state'>state</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:state</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="type-instance_method">
+  
+    #<strong>type</strong>(column_name = :type)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>type: Rails single table inheritance (STI)  uses a magic field name `type`.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+150
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 150</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uri-instance_method">
+  
+    #<strong>uri</strong>(column_name = :uri)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>uri: string is unlimited.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_uri'>uri</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:uri</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uuid_string-instance_method">
+  
+    #<strong>uuid_string</strong>(column_name = :uuid_string)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>uuid_string: we sometimes like to use UUID strings;  for efficiency, we
+suggest using a database-native format.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+105
+106
+107
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 105</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_uuid_string'>uuid_string</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:uuid_string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>36</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='label'>unique:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="width-instance_method">
+  
+    #<strong>width</strong>(column_name = :width)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 65</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_width'>width</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:width</span><span class='rparen'>)</span>       <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Jun 24 10:29:29 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.14 (ruby-2.5.1).
+</div>
+
+    </div>
+  </body>
 </html>
-
