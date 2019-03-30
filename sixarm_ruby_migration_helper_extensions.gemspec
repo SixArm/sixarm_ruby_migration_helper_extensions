@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_migration_helper_extensions"
   s.summary        = "SixArm.com → Ruby → Migration helper extensions"
   s.description    = "Migration helper extensions for Ruby On Rails development"
-  s.version        = "4.0.0"
+  s.version        = "5.0.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"

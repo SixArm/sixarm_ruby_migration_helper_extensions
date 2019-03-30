@@ -6,7 +6,7 @@
 <title>
   Module: Ddb::SixArm::MigrationHelper::InstanceMethods
   
-    &mdash; Documentation by YARD 0.9.14
+    &mdash; Documentation by YARD 0.9.16
   
 </title>
 
@@ -138,8 +138,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>auditstamps: we like to track what&#39;s happening to a row, by using
-typical Rails timestamps and then some more.</p>
+<p>auditstamps: we like to track what&#39;s happening to a row, by using typical Rails timestamps and then some more.</p>
 </div></span>
   
 </li>
@@ -194,6 +193,28 @@ typical Rails timestamps and then some more.</p>
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#elevation-instance_method" title="#elevation (instance method)">#<strong>elevation</strong>(column_name = :elevation)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#email-instance_method" title="#email (instance method)">#<strong>email</strong>(column_name = :email)  &#x21d2; Object </a>
     
 
@@ -209,8 +230,7 @@ typical Rails timestamps and then some more.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>email: string limit is 320 because the email spec has pieces that total to
-320, though then trims the limit to 254.</p>
+<p>email: string limit is 320 because the email spec has pieces that total to 320, though then trims the limit to 254.</p>
 </div></span>
   
 </li>
@@ -234,7 +254,7 @@ typical Rails timestamps and then some more.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Vendors.</p>
+<p>Vendor.</p>
 </div></span>
   
 </li>
@@ -281,6 +301,102 @@ typical Rails timestamps and then some more.</p>
   
     <span class="summary_desc"><div class='inline'>
 <p>Size.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hostname-instance_method" title="#hostname (instance method)">#<strong>hostname</strong>(column_name = :hostname)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>hostname: POSIX standard is not to exceed 255 bytes.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iso_3166_1_alpha_2-instance_method" title="#iso_3166_1_alpha_2 (instance method)">#<strong>iso_3166_1_alpha_2</strong>(column_name = :iso_3166_1_alpha_2)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ISO 3166-1 alpha-2 - two-letter country codes which are also used to create the ISO 3166-2 country subdivision codes and the Internet country code top-level domains.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iso_3166_1_alpha_3-instance_method" title="#iso_3166_1_alpha_3 (instance method)">#<strong>iso_3166_1_alpha_3</strong>(column_name = :iso_3166_1_alpha_3)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ISO 3166-1 alpha-3 – three-letter country codes which may allow a better visual association between the codes and the country names than the 3166-1 alpha-2 codes.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iso_3166_1_numeric-instance_method" title="#iso_3166_1_numeric (instance method)">#<strong>iso_3166_1_numeric</strong>(column_name = :iso_3166_1_numeric)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.</p>
 </div></span>
   
 </li>
@@ -350,8 +466,7 @@ typical Rails timestamps and then some more.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>lock_version: Rails row locking using either optimistic locking or
-pessimistic locking.</p>
+<p>lock_version: Rails row locking using either optimistic locking or pessimistic locking.</p>
 </div></span>
   
 </li>
@@ -404,30 +519,6 @@ pessimistic locking.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>(column_name = :name)  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Name.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
       <a href="#parent_id-instance_method" title="#parent_id (instance method)">#<strong>parent_id</strong>(column_name = :parent_id)  &#x21d2; Object </a>
     
 
@@ -443,8 +534,7 @@ pessimistic locking.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>parent_id: we sometimes use parent-child relationships, where `parent_id`
-points to the parent row.</p>
+<p>parent_id: we sometimes use parent-child relationships, where `parent_id` points to the parent row.</p>
 </div></span>
   
 </li>
@@ -468,8 +558,7 @@ points to the parent row.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>phone: string limit is 75 because that&#39;s our arbitrary limit, and long
-enough for international numbers and extensions.</p>
+<p>phone: string limit is 75 because that&#39;s our arbitrary limit, and long enough for international numbers and extensions.</p>
 </div></span>
   
 </li>
@@ -493,8 +582,7 @@ enough for international numbers and extensions.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>position: we sometimes like to use ordered lists,  where the `position` is
-the list position.</p>
+<p>position: we sometimes like to use ordered lists, where the `position` is the list position.</p>
 </div></span>
   
 </li>
@@ -518,8 +606,31 @@ the list position.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>state: we sometimes like to use state machines,  where the `state` is an
-integer enumeration.</p>
+<p>state: we sometimes like to use state machines, where the `state` is an integer enumeration.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#timestamp_string-instance_method" title="#timestamp_string (instance method)">#<strong>timestamp_string</strong>(column_name = :timestamp_string)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>timestamp_string: timestamp strings are good for e.g.</p>
 </div></span>
   
 </li>
@@ -543,7 +654,7 @@ integer enumeration.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>type: Rails single table inheritance (STI)  uses a magic field name `type`.</p>
+<p>type: Rails single table inheritance (STI) uses a magic field name `type`.</p>
 </div></span>
   
 </li>
@@ -591,8 +702,7 @@ integer enumeration.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>uuid_string: we sometimes like to use UUID strings;  for efficiency, we
-suggest using a database-native format.</p>
+<p>uuid_string: we sometimes like to use UUID strings; for efficiency, we suggest using a database-native format.</p>
 </div></span>
   
 </li>
@@ -616,6 +726,30 @@ suggest using a database-native format.</p>
 
   
     <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#zid_string-instance_method" title="#zid_string (instance method)">#<strong>zid_string</strong>(column_name = :zid_string)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>zid_string: we sometimes like to use ZID strings, similar to UUID stings; for efficiency, we suggest using a database-native format.</p>
+</div></span>
   
 </li>
 
@@ -644,12 +778,12 @@ suggest using a database-native format.</p>
       <pre class="lines">
 
 
-77</pre>
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 73</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_altitude'>altitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:altitude</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+<span class='kw'>def</span> <span class='id identifier rubyid_altitude'>altitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:altitude</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -667,8 +801,7 @@ suggest using a database-native format.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>auditstamps: we like to track what&#39;s happening to a row, by using
-typical Rails timestamps and then some more.</p>
+<p>auditstamps: we like to track what&#39;s happening to a row, by using typical Rails timestamps and then some more.</p>
 
 
   </div>
@@ -682,21 +815,21 @@ typical Rails timestamps and then some more.</p>
       <pre class="lines">
 
 
-159
-160
-161
-162
-163
-164</pre>
+178
+179
+180
+181
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 159</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 178</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_auditstamps'>auditstamps</span>
-  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:created_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:created_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:created_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:created_by</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:updated_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:updated_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:updated_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:updated_by</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:proofed_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:proofed_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:proofed_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:proofed_by</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:retired_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:retired_at</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:retired_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='symbol'>:retired_by</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:created_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:created_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:updated_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:updated_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:proofed_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:proofed_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:retired_at</span><span class='comma'>,</span> <span class='symbol'>:datetime</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='symbol'>:retired_by</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span><span class='semicolon'>;</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -717,12 +850,9 @@ typical Rails timestamps and then some more.</p>
     
 <p>Database administration</p>
 
-<p>We build many Rails apps and we like to add some columns that help with
-database administration and easy growth.</p>
+<p>We build many Rails apps and we like to add some columns that help with database administration and easy growth.</p>
 
-<p>We like to add these columns during setup, even if we don&#39;t use them,
-because they make syncronization easy, and they work with some of our data
-auditing shared code.</p>
+<p>We like to add these columns during setup, even if we don&#39;t use them, because they make syncronization easy, and they work with some of our data auditing shared code.</p>
 
 <p>Use what you like, customize as you like, YMMV, etc.</p>
 
@@ -738,18 +868,18 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-178
-179
-180
-181
-182
-183
-184
-185
-186</pre>
+197
+198
+199
+200
+201
+202
+203
+204
+205</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 197</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dba'>dba</span>
   <span class='id identifier rubyid_uuid_string'>uuid_string</span>
@@ -780,12 +910,38 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-66</pre>
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 66</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_depth'>depth</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:depth</span><span class='rparen'>)</span>       <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="elevation-instance_method">
+  
+    #<strong>elevation</strong>(column_name = :elevation)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_elevation'>elevation</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:elevation</span><span class='rparen'>)</span>   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -803,8 +959,7 @@ auditing shared code.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>email: string limit is 320 because the email spec has pieces that total to
-320, though then trims the limit to 254.</p>
+<p>email: string limit is 320 because the email spec has pieces that total to 320, though then trims the limit to 254.</p>
 
 
   </div>
@@ -818,17 +973,15 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-35
-36
-37
-38</pre>
+27
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_email'>email</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:email</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>320</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -847,7 +1000,7 @@ auditing shared code.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Vendors</p>
+<p>Vendor</p>
 
 
   </div>
@@ -861,12 +1014,12 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-91
-92
-93</pre>
+213
+214
+215</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 213</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_freebase'>freebase</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:freebase</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
@@ -891,19 +1044,21 @@ auditing shared code.</p>
       <pre class="lines">
 
 
+76
+77
+78
 79
 80
-81
-82
-83</pre>
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 79</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 76</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_geolocation'>geolocation</span>
   <span class='id identifier rubyid_latitude'>latitude</span>
   <span class='id identifier rubyid_longitude'>longitude</span>
   <span class='id identifier rubyid_altitude'>altitude</span>
+  <span class='id identifier rubyid_elevation'>elevation</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -936,12 +1091,176 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-63</pre>
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_height'>height</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:height</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="hostname-instance_method">
+  
+    #<strong>hostname</strong>(column_name = :hostname)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>hostname: POSIX standard is not to exceed 255 bytes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hostname'>hostname</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:hostname</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>255</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="iso_3166_1_alpha_2-instance_method">
+  
+    #<strong>iso_3166_1_alpha_2</strong>(column_name = :iso_3166_1_alpha_2)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ISO 3166-1 alpha-2 - two-letter country codes which are also used to create the ISO 3166-2 country subdivision codes and the Internet country code top-level domains.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 90</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_iso_3166_1_alpha_2'>iso_3166_1_alpha_2</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:iso_3166_1_alpha_2</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>2</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="iso_3166_1_alpha_3-instance_method">
+  
+    #<strong>iso_3166_1_alpha_3</strong>(column_name = :iso_3166_1_alpha_3)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ISO 3166-1 alpha-3 – three-letter country codes which may allow a better visual association between the codes and the country names than the 3166-1 alpha-2 codes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_iso_3166_1_alpha_3'>iso_3166_1_alpha_3</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:iso_3166_1_alpha_3</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>3</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="iso_3166_1_numeric-instance_method">
+  
+    #<strong>iso_3166_1_numeric</strong>(column_name = :iso_3166_1_numeric)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 100</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_iso_3166_1_numeric'>iso_3166_1_numeric</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:iso_3166_1_numeric</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>3</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -973,12 +1292,12 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-75</pre>
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 75</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 71</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_latitude'>latitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:latitude</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+<span class='kw'>def</span> <span class='id identifier rubyid_latitude'>latitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:latitude</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -999,10 +1318,10 @@ auditing shared code.</p>
       <pre class="lines">
 
 
-64</pre>
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 64</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 60</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_length'>length</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:length</span><span class='rparen'>)</span>     <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
     </td>
@@ -1022,8 +1341,7 @@ auditing shared code.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>lock_version: Rails row locking using either optimistic locking or
-pessimistic locking.</p>
+<p>lock_version: Rails row locking using either optimistic locking or pessimistic locking.</p>
 
 
   </div>
@@ -1037,17 +1355,15 @@ pessimistic locking.</p>
       <pre class="lines">
 
 
-141
-142
-143
-144</pre>
+162
+163
+164</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 141</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 162</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lock_version'>lock_version</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:lock_version</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1069,12 +1385,12 @@ pessimistic locking.</p>
       <pre class="lines">
 
 
-76</pre>
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 72</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_longitude'>longitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:longitude</span><span class='rparen'>)</span>   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
+<span class='kw'>def</span> <span class='id identifier rubyid_longitude'>longitude</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:longitude</span><span class='rparen'>)</span>   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span><span class='semicolon'>;</span> <span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1095,55 +1411,12 @@ pessimistic locking.</p>
       <pre class="lines">
 
 
-67</pre>
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 67</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 63</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_mass'>mass</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:mass</span><span class='rparen'>)</span>         <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="name-instance_method">
-  
-    #<strong>name</strong>(column_name = :name)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Name</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-26
-27
-28
-29</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 26</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:name</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1161,8 +1434,7 @@ pessimistic locking.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>parent_id: we sometimes use parent-child relationships, where `parent_id`
-points to the parent row.</p>
+<p>parent_id: we sometimes use parent-child relationships, where `parent_id` points to the parent row.</p>
 
 
   </div>
@@ -1176,17 +1448,15 @@ points to the parent row.</p>
       <pre class="lines">
 
 
-114
-115
-116
-117</pre>
+138
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 114</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 138</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_parent_id'>parent_id</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:parent_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1205,8 +1475,7 @@ points to the parent row.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>phone: string limit is 75 because that&#39;s our arbitrary limit, and long
-enough for international numbers and extensions.</p>
+<p>phone: string limit is 75 because that&#39;s our arbitrary limit, and long enough for international numbers and extensions.</p>
 
 
   </div>
@@ -1220,17 +1489,15 @@ enough for international numbers and extensions.</p>
       <pre class="lines">
 
 
-44
-45
-46
-47</pre>
+35
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_phone'>phone</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:phone</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1249,8 +1516,7 @@ enough for international numbers and extensions.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>position: we sometimes like to use ordered lists,  where the `position` is
-the list position.</p>
+<p>position: we sometimes like to use ordered lists, where the `position` is the list position.</p>
 
 
   </div>
@@ -1264,17 +1530,15 @@ the list position.</p>
       <pre class="lines">
 
 
-123
-124
-125
-126</pre>
+146
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 123</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_position'>position</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:position</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1293,8 +1557,7 @@ the list position.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>state: we sometimes like to use state machines,  where the `state` is an
-integer enumeration.</p>
+<p>state: we sometimes like to use state machines, where the `state` is an integer enumeration.</p>
 
 
   </div>
@@ -1308,17 +1571,56 @@ integer enumeration.</p>
       <pre class="lines">
 
 
-132
-133
-134
-135</pre>
+154
+155
+156</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 132</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_state'>state</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:state</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:integer</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="timestamp_string-instance_method">
+  
+    #<strong>timestamp_string</strong>(column_name = :timestamp_string)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>timestamp_string: timestamp strings are good for e.g. log reports; our format has a max length of  “YYYY-DD-MMTHH:MM:SS.NNNNNNNNN+HH:MM”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 114</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_timestamp_string'>timestamp_string</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:timestamp_string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>35</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1337,7 +1639,7 @@ integer enumeration.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>type: Rails single table inheritance (STI)  uses a magic field name `type`.</p>
+<p>type: Rails single table inheritance (STI) uses a magic field name `type`.</p>
 
 
   </div>
@@ -1351,17 +1653,15 @@ integer enumeration.</p>
       <pre class="lines">
 
 
-150
-151
-152
-153</pre>
+170
+171
+172</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 170</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:type</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1394,17 +1694,15 @@ integer enumeration.</p>
       <pre class="lines">
 
 
-52
-53
-54
-55</pre>
+42
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uri'>uri</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:uri</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1423,8 +1721,7 @@ integer enumeration.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>uuid_string: we sometimes like to use UUID strings;  for efficiency, we
-suggest using a database-native format.</p>
+<p>uuid_string: we sometimes like to use UUID strings; for efficiency, we suggest using a database-native format.</p>
 
 
   </div>
@@ -1438,17 +1735,15 @@ suggest using a database-native format.</p>
       <pre class="lines">
 
 
-105
-106
-107
-108</pre>
+122
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uuid_string'>uuid_string</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:uuid_string</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>36</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='label'>unique:</span> <span class='kw'>true</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1470,12 +1765,53 @@ suggest using a database-native format.</p>
       <pre class="lines">
 
 
-65</pre>
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_width'>width</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:width</span><span class='rparen'>)</span>       <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:decimal</span><span class='comma'>,</span> <span class='label'>precision:</span> <span class='int'>13</span><span class='comma'>,</span> <span class='label'>scale:</span> <span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="zid_string-instance_method">
+  
+    #<strong>zid_string</strong>(column_name = :zid_string)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>zid_string: we sometimes like to use ZID strings, similar to UUID stings; for efficiency, we suggest using a database-native format.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+130
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_migration_helper_extensions.rb', line 130</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_zid_string'>zid_string</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='op'>=</span><span class='symbol'>:zid_string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_column'>column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_name'>column_name</span><span class='comma'>,</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>36</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1486,9 +1822,9 @@ suggest using a database-native format.</p>
 </div>
 
       <div id="footer">
-  Generated on Sun Jun 24 10:29:29 2018 by
+  Generated on Fri Mar 29 19:55:18 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.14 (ruby-2.5.1).
+  0.9.16 (ruby-2.5.1).
 </div>
 
     </div>

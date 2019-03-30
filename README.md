@@ -80,7 +80,7 @@ The result is an item class with fields of the various data types:
     item = Item.new
     item.name = "Statue Of Liberty"
     item.email = "liberty@example.com"
-    item.phone = "+1 (212) 363-3200"
+    item.phone = "+1-212-363-3200"
     item.height = 46.50
     item.weight = 204116566
     item.latitude = 40.68913

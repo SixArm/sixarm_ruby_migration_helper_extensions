@@ -21,20 +21,11 @@ module Ddb
         ##
 
         ##
-        # Name
-        #
-        def name(column_name=:name)
-          column(column_name, :string)
-          index(column_name)
-        end
-
-        ##
         # email: string limit is 320 because the email spec has pieces
         # that total to 320, though then trims the limit to 254.
         #
         def email(column_name=:email)
           column(column_name, :string, limit: 320)
-          index(column_name)
         end
 
         ##
@@ -43,7 +34,6 @@ module Ddb
         #
         def phone(column_name=:phone)
           column(column_name, :string)
-          index(column_name)
         end
 
         ##
@@ -51,7 +41,13 @@ module Ddb
         #
         def uri(column_name=:uri)
           column(column_name, :string)
-          index(column_name)
+        end
+
+        ##
+        # hostname: POSIX standard is not to exceed 255 bytes.
+        #
+        def hostname(column_name=:hostname)
+          column(column_name, :string, limit: 255)
         end
 
         ##
@@ -72,24 +68,37 @@ module Ddb
         #
         ##
 
-        def latitude(column_name=:latitude)     column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
-        def longitude(column_name=:longitude)   column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
-        def altitude(column_name=:altitude)     column(column_name, :decimal, precision: 13, scale: 10); index(column_name); end
+        def latitude(column_name=:latitude)     column(column_name, :decimal, precision: 13, scale: 10); end
+        def longitude(column_name=:longitude)   column(column_name, :decimal, precision: 13, scale: 10); end
+        def altitude(column_name=:altitude)     column(column_name, :decimal, precision: 13, scale: 10); end
+        def elevation(column_name=:elevation)   column(column_name, :decimal, precision: 13, scale: 10); end
 
         def geolocation
           latitude
           longitude
           altitude
+          elevation
         end
 
         ##
         #
-        # Vendors
+        # Places
         #
         ##
 
-        def freebase(column_name=:freebase)
-          column(column_name, :string)
+        # ISO 3166-1 alpha-2 - two-letter country codes which are also used to create the ISO 3166-2 country subdivision codes and the Internet country code top-level domains.
+        def iso_3166_1_alpha_2(column_name=:iso_3166_1_alpha_2)
+          column(column_name, :string, limit: 2)
+        end
+
+        # ISO 3166-1 alpha-3 – three-letter country codes which may allow a better visual association between the codes and the country names than the 3166-1 alpha-2 codes.
+        def iso_3166_1_alpha_3(column_name=:iso_3166_1_alpha_3)
+          column(column_name, :string, limit: 3)
+        end
+
+        # ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.
+        def iso_3166_1_numeric(column_name=:iso_3166_1_numeric)
+          column(column_name, :string, limit: 3)
         end
 
         ##
@@ -99,12 +108,27 @@ module Ddb
         ##
 
         ##
-        # uuid_string: we sometimes like to use UUID strings; 
+        # timestamp_string: timestamp strings are good for e.g. log reports;
+        # our format has a max length of  "YYYY-DD-MMTHH:MM:SS.NNNNNNNNN+HH:MM".
+        #
+        def timestamp_string(column_name=:timestamp_string)
+          column(column_name, :string, limit: 35)
+        end
+
+        ##
+        # uuid_string: we sometimes like to use UUID strings;
         # for efficiency, we suggest using a database-native format.
         #
         def uuid_string(column_name=:uuid_string)
           column(column_name, :string, limit: 36)
-          index(column_name, unique: true)
+        end
+
+        ##
+        # zid_string: we sometimes like to use ZID strings, similar to UUID stings;
+        # for efficiency, we suggest using a database-native format.
+        #
+        def zid_string(column_name=:zid_string)
+          column(column_name, :string, limit: 36)
         end
 
         ##
@@ -113,25 +137,22 @@ module Ddb
         #
         def parent_id(column_name=:parent_id)
           column(column_name, :integer)
-          index(column_name)
         end
 
         ##
-        # position: we sometimes like to use ordered lists, 
+        # position: we sometimes like to use ordered lists,
         # where the `position` is the list position.
         #
         def position(column_name=:position)
           column(column_name, :integer)
-          index(column_name)
         end
 
         ##
-        # state: we sometimes like to use state machines, 
+        # state: we sometimes like to use state machines,
         # where the `state` is an integer enumeration.
         #
         def state(column_name=:state)
           column(column_name, :integer)
-          index(column_name)
         end
 
         ##
@@ -140,27 +161,25 @@ module Ddb
         #
         def lock_version(column_name=:lock_version)
           column(column_name, :integer)
-          index(column_name)
         end
 
         ##
-        # type: Rails single table inheritance (STI) 
+        # type: Rails single table inheritance (STI)
         # uses a magic field name `type`.
         #
         def type(column_name=:type)
           column(column_name, :string)
-          index(column_name)
-        end  
+        end
 
         ##
         # auditstamps: we like to track what's happening to a row,
         # by using typical Rails timestamps and then some more.
         #
         def auditstamps
-          column(:created_at, :datetime); index(:created_at); column(:created_by, :integer); index(:created_by)
-          column(:updated_at, :datetime); index(:updated_at); column(:updated_by, :integer); index(:updated_by)
-          column(:proofed_at, :datetime); index(:proofed_at); column(:proofed_by, :integer); index(:proofed_by)
-          column(:retired_at, :datetime); index(:retired_at); column(:retired_by, :integer); index(:retired_by)
+          column(:created_at, :datetime); column(:created_by, :integer);
+          column(:updated_at, :datetime); column(:updated_by, :integer);
+          column(:proofed_at, :datetime); column(:proofed_by, :integer);
+          column(:retired_at, :datetime); column(:retired_by, :integer);
         end
 
         ##
@@ -183,6 +202,16 @@ module Ddb
           parent_id
           position
           type
+        end
+
+        ##
+        #
+        # Vendor
+        #
+        ##
+
+        def freebase(column_name=:freebase)
+          column(column_name, :string)
         end
 
       end
