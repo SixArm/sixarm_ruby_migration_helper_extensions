@@ -4,7 +4,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_migration_helper_extensions.svg)](http://badge.fury.io/rb/sixarm_ruby_migration_helper_extensions)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_migration_helper_extensions.png)](https://travis-ci.org/SixArm/sixarm_ruby_migration_helper_extensions)
-[![Code Climate](https://api.codeclimate.com/v1/badges/c0c87ef7543e0da158f5/maintanability)](https://codeclimate.com/github/SixArm/sixarm_ruby_migration_helper_extensions/maintainability)
+[![Code Climate](https://api.codeclimate.com/v1/badges/c0c87ef7543e0da158f5/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_migration_helper_extensions/maintainability)
 
 * Git: <https://github.com/SixArm/sixarm_ruby_migration_helper_extensions>
 * Doc: <http://sixarm.com/sixarm_ruby_migration_helper_extensions/doc>
