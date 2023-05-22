@@ -111,7 +111,7 @@ DEPENDENCIES
   reek (>= 4.8.1, < 5)
   rubocop (>= 0.57.2, < 1)
   rubycritic (>= 3.4.0, < 4)
-  simplecov (>= 0.16.1, < 2)
+  simplecov (>= 0.18.0, < 2)
   sixarm_ruby_active_record_migration_mock (>= 2.1.0, < 3)
   sixarm_ruby_migration_helper_extensions!
   sixarm_ruby_minitest_extensions (>= 1.0.8, < 2)
